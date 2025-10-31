@@ -14,7 +14,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // ---------- AUTH UTILITIES ----------
   function safeParse(v, fallback){ try{ return JSON.parse(v); }catch(e){ return fallback; } }
-  function getUsers(){ return safeParse(localStorage.getItem('mm_users'), {}); }
+  function getUsers() {
+  const data = localStorage.getItem('mm_users');
+  if (!data) return {}; // <— ensures it’s never null
+  return safeParse(data, {});
+}
   function saveUsers(u){ localStorage.setItem('mm_users', JSON.stringify(u)); }
   function getLogged(){ return localStorage.getItem('mm_logged') || null; }
   function setLogged(email){ if(email) localStorage.setItem('mm_logged', email); else localStorage.removeItem('mm_logged'); }
@@ -363,3 +367,4 @@ if(priceBtn && priceInput && priceResultDiv) {
   }
 
 });
+
