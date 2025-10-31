@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Dashboard — MoboMojo</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="wrap">
+    <header class="header">
+      <div class="brand"><div class="logo">MM</div><div><h1>MoboMojo</h1><div class="tag">Dashboard</div></div></div>
+      <nav>
+        <ul>
+          <li><a href="wishlist.html">Wishlist</a></li>
+          <li><a href="builder.html">Builder</a></li>
+          <li><a href="compatibility.html">Compatibility</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="#" id="logoutBtn">Logout</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-content">
+      <h1>Welcome, <span id="userName">Builder</span></h1>
+      <p class="small">Summary of your builds, wishlist and notifications.</p>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Saved Builds</h3>
+          <ul id="dashboardBuilds" class="list"></ul>
+        </div>
+        <div class="card">
+          <h3>Wishlist</h3>
+          <ul id="dashboardWishlist" class="list"></ul>
+        </div>
+        <div class="card">
+          <h3>Notifications</h3>
+          <div id="dashboardNotifs" class="result-card small"></div>
+        </div>
+        <div class="card">
+          <h3>Community</h3>
+          <p class="small">Share reviews and ratings.</p>
+          <a href="community.html" class="btn">Go to Community</a>
+        </div>
+      </div>
+    </main>
+
+    <footer><div>© MoboMojo</div></footer>
+  </div>
+</body>
+</html>
