@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>MoboMojo — Build Smarter</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="wrap">
+    <header class="header">
+      <div class="brand">
+        <div class="logo">MM</div>
+        <div>
+          <h1>MoboMojo</h1><div class="tag">Motherboard matchmaker · Build smarter, plan faster.</div>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="builder.html">Builder</a></li>
+          <li><a href="compatibility.html">Compatibility</a></li>
+          <li><a href="wishlist.html">Wishlist</a></li>
+          <li><a href="store.html">Store</a></li>
+          <li><a href="community.html">Community</a></li>
+          <li><a href="notifications.html">Notifications</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a class="primary" href="login.html">Sign In</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="card">
+        <h2>Pick one part. We’ll complete the squad.</h2>
+        <p class="lead">Find compatible components, plan your dream build, and track prices — all in one place.</p>
+        <div class="features">
+          <div class="feature">🔍 <strong>Compatibility Checker</strong></div>
+          <div class="feature">🧩 <strong>Build Planner & Wishlist</strong></div>
+          <div class="feature">💸 <strong>Price Aggregator (PCX)</strong></div>
+          <div class="feature">⭐ <strong>Community Reviews</strong></div>
+        </div>
+      </div>
+
+      <aside class="card">
+        <h3>Quick Preview</h3>
+        <p class="lead">Type a part below for a mock compatibility suggestion.</p>
+        <input id="partInput" class="input" placeholder="e.g. RTX 4070"/>
+        <div style="margin-top:8px">
+          <button id="checkBtn" class="btn primary">Find Matches</button>
+        </div>
+        <div id="result" class="result-card" style="margin-top:12px"></div>
+
+        <hr style="margin:12px 0;border-color:rgba(255,255,255,0.04)">
+
+        <h4>Price lookup (sample)</h4>
+        <input id="priceInput" class="input" placeholder="e.g. RTX 4070"/>
+        <div style="margin-top:8px"><button id="priceBtn" class="btn">Get Price</button></div>
+        <div id="priceResult" class="result-card" style="margin-top:8px"></div>
+        
+        <div style="margin-top:12px">
+          <h4 style="margin:0 0 8px 0;">Searchable Parts:</h4>
+          <div class="feature-grid">
+            <div class="feature-card">RTX 4080</div>
+            <div class="feature-card">Ryzen 7800X</div>
+            <div class="feature-card">Z790 Tomahawk</div>
+            <div class="feature-card">AMD 5800X</div>
+            <div class="feature-card">Intel i7-13700K</div>
+            <div class="feature-card">SSD 500GB</div>
+            <div class="feature-card">550W PSU</div>
+            <div class="feature-card">DDR4 32GB</div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <footer>
+      <div>© <strong>MoboMojo</strong> · Built with ❤️ for builders</div>
+      <div class="tag small">Plug-n-play compatibility for hobbyists and pros</div>
+    </footer>
+  </div>
+</body>
+</html>

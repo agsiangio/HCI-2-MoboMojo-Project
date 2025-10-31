@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Builder — MoboMojo</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="wrap">
+    <header class="header">
+      <div class="brand"><div class="logo">MM</div><div><h1>MoboMojo</h1><div class="tag">Build Planner</div></div></div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="compatibility.html">Compatibility</a></li>
+          <li><a href="wishlist.html">Wishlist</a></li>
+          <li><a href="profile.html">Profile</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-content">
+      <h1>Build Planner</h1>
+      <form id="buildForm" class="card">
+        <label class="small">CPU</label>
+        <input id="cpu" class="input" placeholder="e.g. Ryzen 5600X"/>
+        <label class="small">GPU</label>
+        <input id="gpu" class="input" placeholder="e.g. RTX 4070"/>
+        <label class="small">Motherboard</label>
+        <input id="mobo" class="input" placeholder="e.g. B550 Tomahawk"/>
+        <label class="small">RAM</label>
+        <input id="ram" class="input" placeholder="e.g. 32GB DDR4"/>
+        <label class="small">PSU</label>
+        <input id="psu" class="input" placeholder="e.g. 750W 80+ Gold"/>
+        <div style="margin-top:12px"><button class="btn primary" type="submit">Save Build</button></div>
+      </form>
+
+      <div id="buildList" class="result-card"></div>
+    </main>
+
+    <footer><div>© MoboMojo</div></footer>
+  </div>
+</body>
+</html>

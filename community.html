@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Community — MoboMojo</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="wrap">
+    <header class="header">
+      <div class="brand"><div class="logo">MM</div><div><h1>MoboMojo</h1><div class="tag">Community</div></div></div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="store.html">Store</a></li>
+          <li><a href="profile.html">Profile</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-content">
+      <h1>Community Reviews</h1>
+      <form id="reviewForm" class="card">
+        <input id="reviewUser" class="input" placeholder="Your name"/>
+        <textarea id="reviewText" class="input" placeholder="Write a short review" style="height:80px"></textarea>
+        <select id="reviewRating" class="input"><option value="">Rating</option><option value="⭐">⭐</option><option value="⭐⭐">⭐⭐</option><option value="⭐⭐⭐">⭐⭐⭐</option><option value="⭐⭐⭐⭐">⭐⭐⭐⭐</option><option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐</option></select>
+        <div style="margin-top:8px"><button class="btn primary" type="submit">Post Review</button></div>
+      </form>
+
+      <div id="reviewList" class="result-card"></div>
+    </main>
+
+    <footer><div>© MoboMojo</div></footer>
+  </div>
+</body>
+</html>
