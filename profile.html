@@ -4,8 +4,6 @@
   <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>Profile — MoboMojo</title>
   <link rel="stylesheet" href="style.css"/>
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-  <script src="supabase-client.js"></script>
   <script defer src="script.js"></script>
 </head>
 <body>
@@ -26,9 +24,11 @@
       <h1>Your Profile</h1>
       <form id="profileForm" class="card">
         <label class="small">Username</label>
-        <input id="profileUsername" class="input" placeholder="Your username" />
+        <input id="profileUsername" class="input" />
         <label class="small">Email</label>
-        <input id="profileEmail" class="input" placeholder="Your email" readonly />
+        <input id="profileEmail" class="input" />
+        <label class="small">Password</label>
+        <input id="profilePassword" class="input" type="password" />
         <div style="margin-top:12px"><button class="btn primary" type="submit">Save Changes</button></div>
       </form>
     </main>

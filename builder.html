@@ -4,8 +4,6 @@
   <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>Builder — MoboMojo</title>
   <link rel="stylesheet" href="style.css"/>
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-  <script src="supabase-client.js"></script>
   <script defer src="script.js"></script>
 </head>
 <body>
@@ -27,33 +25,16 @@
     <main class="page-content">
       <h1>Build Planner</h1>
       <form id="buildForm" class="card">
-        <label class="small">Build Name</label>
-        <input id="buildName" class="input" placeholder="e.g. My Gaming Rig"/>
-
         <label class="small">CPU</label>
-        <input id="cpu" class="input" placeholder="e.g. Ryzen 7 7800X3D"/>
-
+        <input id="cpu" class="input" placeholder="e.g. Ryzen 5600X"/>
         <label class="small">GPU</label>
         <input id="gpu" class="input" placeholder="e.g. RTX 4070"/>
-
         <label class="small">Motherboard</label>
-        <input id="mobo" class="input" placeholder="e.g. GIGABYTE B650 AORUS ELITE"/>
-
+        <input id="mobo" class="input" placeholder="e.g. B550 Tomahawk"/>
         <label class="small">RAM</label>
-        <input id="ram" class="input" placeholder="e.g. 32GB DDR5 6000MHz"/>
-
+        <input id="ram" class="input" placeholder="e.g. 32GB DDR4"/>
         <label class="small">PSU</label>
         <input id="psu" class="input" placeholder="e.g. 750W 80+ Gold"/>
-
-        <label class="small">Storage</label>
-        <input id="storage" class="input" placeholder="e.g. 1TB NVMe Gen4 SSD"/>
-
-        <label class="small">Cooler</label>
-        <input id="cooler" class="input" placeholder="e.g. Noctua NH-D15"/>
-
-        <label class="small">Case</label>
-        <input id="caseName" class="input" placeholder="e.g. NZXT H510 Flow"/>
-
         <div style="margin-top:12px"><button class="btn primary" type="submit">Save Build</button></div>
       </form>
 
